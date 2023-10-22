@@ -12,7 +12,7 @@ const Navbar = () => {
     <header className='  w-full   py-5 px-3 md:px-12 flex container mx-auto  justify-between items-center'>
         {/* logo  */}
         <div>
-            <img src={require('../../assets/images/logo.png')} width='180px'  alt='' />
+            {/* <img src={require('../../assets/images/logo.png')} width='180px'  alt='' /> */}
         </div>
 
         <div>

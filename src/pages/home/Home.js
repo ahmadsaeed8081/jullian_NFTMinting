@@ -198,7 +198,7 @@ const Home = () => {
         <Navbar/>
 
 
-        <div className=' mb-12  mt-12 border-white rounded-md  p-5 w-[80%] md:w-[30%] border  mx-auto h-auto' style={{marginTop:70,paddingTop:40, maxWidth:500
+        <div className=' mb-12  mt-12 border-white rounded-md  p-5 w-[80%] md:w-[35%] border  mx-auto h-auto' style={{marginTop:70,paddingTop:40, maxWidth:500
          }} >
 
 
@@ -228,7 +228,7 @@ const Home = () => {
 
             <div className=' my-4 flex justify-between items-center border border-white rounded-md p-3'>
                 <div>
-                    <img src={require('../../assets/images/1.png')} height='40px' width="60px" className=' rounded-md'   alt='' />
+                    <img src={require('../../assets/images/Master-Gif.gif')} height='110px' width="140px" className=' rounded-md'   alt='' />
                 </div>
                 <div>
                     <h2 className=' text-gray-200 text-sm'>Price Per NFT</h2>
