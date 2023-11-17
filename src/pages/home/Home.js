@@ -50,7 +50,7 @@ const Home = () => {
       return () => clearInterval(interval);
     }, []);
 
-    const networkId = 80001;
+    const networkId = 137;
 
 
 
@@ -132,7 +132,7 @@ const Home = () => {
     },[address])
   
     function Convert_To_Wei(val) {
-      const web3= new Web3(new Web3.providers.HttpProvider("https://polygon-mumbai-bor.publicnode.com	"));
+      const web3= new Web3(new Web3.providers.HttpProvider("https://polygon-bor.publicnode.com"));
     
       val = web3.utils.toWei(val.toString(), "ether");
       return val;
@@ -141,7 +141,7 @@ const Home = () => {
     async function test() 
     {
   
-      const web3= new Web3(new Web3.providers.HttpProvider("https://polygon-mumbai-bor.publicnode.com	"));
+      const web3= new Web3(new Web3.providers.HttpProvider("https://polygon-bor.publicnode.com"));
   
   
       const balance = await web3.eth.getBalance(address);
@@ -200,8 +200,12 @@ const Home = () => {
 
         <div className=' mb-12  mt-12 border-white rounded-md  p-5 w-[80%] md:w-[35%] border  mx-auto h-auto' style={{marginTop:70,paddingTop:40, maxWidth:500
          }} >
+         {presaleTime>curr_time?(
+
+<>
 
 
+         
            <div className=' text-center  ' >
            <h2 className=' text-white text-xl  sm:text-3xl'>LIMITED TIME PRE-SALE</h2>
            </div>
@@ -224,8 +228,11 @@ const Home = () => {
                     <span className=' text-white'>Seconds</span>
                 </div>
             </div>
+            </>
 
-
+         ):(null)
+         
+         }
             <div className=' my-4 flex justify-between items-center border border-white rounded-md p-3'>
                 <div>
                     <img src={require('../../assets/images/Master-Gif.gif')} height='110px' width="140px" className=' rounded-md'   alt='' />
